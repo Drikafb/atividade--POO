@@ -1,0 +1,36 @@
+# Análise de Matriz 3x3 (versão otimizada)
+
+# Cria matriz 3x3 
+matriz = []
+soma_pares = soma_terceira_coluna = 0
+
+# Entrada de dados e cálculos parciais
+for linha in range(3):
+    matriz.append([])  # adiciona uma nova linha na matriz
+    for coluna in range(3):
+        valor = int(input(f"Digite um valor para [{linha}, {coluna}]: "))
+        matriz[linha].append(valor)
+
+        # Já soma os pares enquanto lê
+        if valor % 2 == 0:
+            soma_pares += valor
+
+        # Soma da terceira coluna (coluna 2)
+        if coluna == 2:
+            soma_terceira_coluna += valor
+
+#  Maior valor da segunda linha
+maior_segunda_linha = max(matriz[1])
+
+#  Mostrando a matriz formatada
+print("\nMatriz digitada:")
+for linha in matriz:
+    for valor in linha:
+        print(f"[{valor:^5}]", end=" ")
+    print()
+
+#  Resultados finais
+print("\n--- Resultados ---")
+print(f"A) Soma dos valores pares: {soma_pares}")
+print(f"B) Soma dos valores da terceira coluna: {soma_terceira_coluna}")
+print(f"C) Maior valor da segunda linha: {maior_segunda_linha}")
