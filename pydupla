@@ -1,4 +1,6 @@
-# Análise de Matriz 3x3 (versão otimizada)
+Adriely e maicoln
+
+# Análise de Matriz 3x3
 
 # Cria matriz 3x3 
 matriz = []
@@ -34,3 +36,4 @@ print("\n--- Resultados ---")
 print(f"A) Soma dos valores pares: {soma_pares}")
 print(f"B) Soma dos valores da terceira coluna: {soma_terceira_coluna}")
 print(f"C) Maior valor da segunda linha: {maior_segunda_linha}")
+
